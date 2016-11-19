@@ -17,11 +17,11 @@ public class LongestPalindromicSubstring {
 
 
     public String updateLongest(String a, String longest, int left, int right){
-
+//        System.out.println(longest);
         assert left >= 0;
         assert right < a.length();
 
-        if(a.charAt(left) != a.charAt(right)) return "";
+        if(a.charAt(left) != a.charAt(right)) return longest;
         assert a.charAt(left) == a.charAt(right);
         while(true){
             assert a.charAt(left) == a.charAt(right);
